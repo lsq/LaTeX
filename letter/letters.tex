@@ -1,0 +1,71 @@
+\documentclass[fontset=none,zihao=-4,linespread=1.4]{ctexart}
+\usepackage{geometry,graphicx,fontspec,lastpage,hyperref,setspace}
+\geometry{a4paper,left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+\ctexset{
+	fontset = macnew,
+}
+
+\hypersetup{
+	hidelinks,
+	bookmarksnumbered = true,
+	pdfauthor= {湖北山河律师事务所},
+	pdftitle = {律师函}
+}
+\usepackage{fancyhdr}
+\fancyhf{}
+\lfoot{\scriptsize 中国武汉市江汉区新华路385号南达大楼11-13层\\
+11-13/F, Nanda Building, No.385 Xinhua Road, Jianghan District, Wuhan China\\
+电话（Tel）：86-27-59516866　59516867　  传真（Fax）：86-27-59516823
+}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.6pt}
+%\pagestyle{fancy} % \sectionmark 的重定义需要在 \pagestyle 之后生效
+%\renewcommand\sectionmark[1]{%
+%	\markright{\CTEXifname{\CTEXthesection——}{}#1}}
+
+\author{欧阳松}
+\date{\zhtoday}
+\title{所函}
+
+\begin{document}
+
+\fontspec{Times New Roman}
+\pagestyle{fancy}
+%-------首部----开始--------
+\begin{spacing}{1}
+\begin{center}
+\noindent \makebox[.4\linewidth][s]{\zihao{4} \textbf{湖北山河律师事务所}}\\
+\vspace{.8ex}
+\makebox[.3\linewidth][s]{\textbf{Hubei S\&H Law Firm}}\\
+\vspace{5ex}
+\makebox[10em][c]{\zihao{2} \heiti \textbf{函}}\\
+\vspace{3ex}
+
+{\zihao{5} \hfill \makebox[5em][r]{〔2018〕山河房字第\ 0492 \ 号}}
+
+\noindent\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2pt}\\ % Thick horizontal rule
+	\rule{\textwidth}{1.6pt} % Thin horizontal rule
+\end{center}
+\end{spacing}
+%---------首部---结束-------
+
+\large
+\noindent 武汉东湖新技术开发区人民法院： \par
+\vspace{1ex}
+
+贵院受理原告湖北省科技投资集团有限公司与被告武汉银瑞丰商贸有限公司房屋租赁合同纠纷一案，现在原告湖北省科技投资集团有限公司已委托本所谭锐锋、欧阳松律师为其诉讼阶段的委托代理人。
+
+\vspace{3ex}
+特此函告
+\vspace{5ex}
+
+
+%-------落款------开始-----
+
+\hfill \makebox[10em][c]{湖北山河律师事务所}\par
+\vspace{2ex}
+\hfill \makebox[10em][c]{\today}
+
+%------落款-------结束-----
+
+\end{document}

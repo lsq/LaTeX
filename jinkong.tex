@@ -1,0 +1,127 @@
+%
+%  使用 xelatex 编译
+%
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,top=2.54cm,bottom=2.54cm,left=3.17cm,right=3.17cm,%
+            includehead,includefoot]{geometry}
+
+%%%%%===== 宏包调用
+\usepackage{amsmath,amssymb,amsfonts,bm} % 数学宏包
+\usepackage{cases} % 数学宏包
+\usepackage{graphicx,subfigure} % 插图宏包
+\usepackage{fancyhdr,lastpage}
+\usepackage{xcolor,float} % 颜色与浮动对象宏包
+\usepackage[xetex,pagebackref,breaklinks,colorlinks]{hyperref} % 超链接宏包
+\hypersetup{citecolor=black,         % 引用标记颜色
+            linkcolor=black,         % 内部普通链接的颜色
+            urlcolor=black,          % url 链接的颜色
+            bookmarksnumbered=true, % 书签带章节编号
+            pdfborder = 000,        %去掉链接红框
+            pdfinfo={
+            Title={年度报告},
+            Author={湖北山河律师事务所}
+            }%PDF属性
+            pdfstartview=Fit,
+            bookmarksopen=true     % 书签目录展开
+           }
+
+%%%%% ===== 其他设置
+\numberwithin{equation}{section} % 数学公式编号方式
+\allowdisplaybreaks  % 允许在长公式中换页
+\linespread{1.25}  % 基本行间距
+
+%%%%% ===== 自定义命令
+\renewcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+%
+\DeclareMathOperator{\tridiag}{tridiag} % 算子
+
+% --------------------------------------------------------------------%
+% 字体
+\setCJKmainfont[
+BoldFont=SIL-Hei-Med-Jian,
+ItalicFont=SIL-Kai-Reg-Jian,
+SmallCapsFont=SIL-Hei-Med-Jian
+]{STSong}
+\setCJKsansfont{Adobe Heiti Std}
+\setCJKmonofont{Times New Roman}
+
+\setCJKfamilyfont{zhsong}{STSong}
+\setCJKfamilyfont{zhhei}{SIL-Hei-Med-Jian}
+\setCJKfamilyfont{zhfs}{STFangsong}
+\setCJKfamilyfont{zhkai}{SIL-Kai-Reg-Jian}
+\setCJKfamilyfont{zhli}{STLibianSC-Regular}
+\setCJKfamilyfont{zhyou}{STYuanti-SC-Regular}
+% --------------------------------------------------------------------%
+
+
+% --------------------------------------------------------------------%
+% 页眉页脚
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+
+\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} %清空当前页眉页脚
+\renewcommand\headrulewidth{0pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+\fancyfoot[C]{\thepage}
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+% --------------------------------------------------------------------%
+
+% 首行缩进两个字符
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+
+%%%%% ===== 论文开始 =====================================================
+\begin{document}
+
+\newcommand{\Customer}{光谷金控}
+\title{\heiti 2017年度工作报告}
+\author{湖北山河律师事务所}
+\date{二〇一八年一月}
+
+
+\begin{titlepage}
+\begin{center}
+    \vspace*{4em}
+\Customer\\
+{\zihao{2} \heiti  GOod}\\
+\vspace{6em}
+\includegraphics[height=1.61cm]{logo-sh.png}\\
+{gwag}\\
+{agwa}\\
+\end{center}
+
+\thispagestyle{empty}
+\end{titlepage}
+
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\section{简要情况} % (fold)
+\label{sec:简要情况}
+
+% section 简要情况 (end)
+
+\section{新三板市场相关制度评析} % (fold)
+\label{sec:新三板市场相关制度评析}
+
+% section 新三板市场相关制度评析 (end)
+
+\section{证券法修改评析} % (fold)
+\label{sec:证券法修改评析}
+	\subsection{金融监管行为不具有可诉性} % (fold)
+	\label{sub:金融监管行为不具有可诉性}
+	金融监管措施是金融法的概念，难以作为行政法的概念。金融监管措施与具体行政行为类型属于不同的逻辑和话语体系。试图将金融监管措施与行政法上任何一种定型化的行为类型相提并论的所有尝试都难以成功。我们至多只能将其解析为某几种主要的定型化的行政行为类型。但由于现实世界的丰富性和多样性，总会有一些行为逃逸于现有的行为类型之外。因此，金融监管措施不能被视为一种新的行政行为类型。金融监管措施并非不受任何约束的权力，我国应从正当程序方面对金融监管措施施加限制。金融监管措施应符合行政法上的比例原则。金融监管措施应遵守法律的正当程序，给予当事人听证的机会，但情况紧急或所涉相对人的权益较小的情形除外。\cite{}
+	% subsection 金融监管行为不具有可诉性 (end)
+% section 证券法修改评析 (end)
+
+
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[coverheight=297mm,coverwidth=210mm,bleedwidth=30mm,spinewidth=10mm,12pt,trimmed]{bookcover}
+\usepackage{kvoptions, textpos, geometry, graphicx, calc, ifthen, tikz, fgruler,ctex}
+
+\begin{document}
+	
+\begin{bookcover}
+
+	%\bookcovercomponent{color}{bg whole without flaps}{top color=white, bottom color=blue!50!black, shading angle=60}
+	%\bookcovercomponent{color}{bg back}{color=red}
+	
+	\bookcovercomponent{tikz clip}{front}{
+		\fill [green] (1,21) rectangle (3,21.3);
+		\fill [#483651] (1,16) rectangle (3,16.3);
+
+	}
+	
+
+	\bookcovercomponent{normal}{front}{
+		\vspace{2cm}	
+		\includegraphics[height=3cm]{../report/img/logo-within.png}\hfill
+		\vspace{5cm}
+
+		
+			{\bfseries \huge 常年法律顾问\\
+			年度报告}\\
+			{\bfseries 2018.4~2018.12}
+
+		
+
+		
+
+		\vspace{2cm}
+		\begin{center}
+			{\bfseries 湖北山河律师事务所}\\
+			\zhtoday
+		\end{center}
+		
+	}
+
+	
+\end{bookcover}
+
+\end{document}
