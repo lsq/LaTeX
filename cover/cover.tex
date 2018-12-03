@@ -1,4 +1,4 @@
-\documentclass[coverheight=297mm,coverwidth=210mm,bleedwidth=30mm,spinewidth=10mm,12pt,trimmed]{bookcover}
+\documentclass[coverheight=297mm,coverwidth=210mm,bleedwidth=15mm,spinewidth=50mm,12pt,trimmed]{bookcover}
 \usepackage{kvoptions, textpos, geometry, graphicx, calc, ifthen, tikz, fgruler,ctex}
 
 \begin{document}
@@ -8,35 +8,30 @@
 	%\bookcovercomponent{color}{bg whole without flaps}{top color=white, bottom color=blue!50!black, shading angle=60}
 	%\bookcovercomponent{color}{bg back}{color=red}
 	
-	\bookcovercomponent{tikz clip}{front}{
-		\fill [green] (1,21) rectangle (3,21.3);
-		\fill [#483651] (1,16) rectangle (3,16.3);
-
-	}
 	
 
 	\bookcovercomponent{normal}{front}{
 		\vspace{2cm}	
-		\includegraphics[height=3cm]{../report/img/logo-within.png}\hfill
+		\begin{flushright}
+			\includegraphics[height=4.65cm]{../report-final/img/logo-within.png}\hspace{2cm}
+		\end{flushright}
+		\centering
 		\vspace{5cm}
 
 		
 			{\bfseries \huge 常年法律顾问\\
 			年度报告}\\
-			{\bfseries 2018.4~2018.12}
+			{\bfseries 2018.4--2018.12}
 
 		
 
 		
 
-		\vspace{2cm}
-		\begin{center}
+		\begin{table}[bp]
 			{\bfseries 湖北山河律师事务所}\\
-			\zhtoday
-		\end{center}
-		
+			二〇一八年十二月
+		\end{table}
 	}
-
 	
 \end{bookcover}
 
